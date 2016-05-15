@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_OCsboJEYEeWRQNiXes3u-A" name="RootElement">
+  <packagedElement xmi:type="uml:Class" xmi:id="_TzHiIJEYEeWRQNiXes3u-A" name="Usuarios">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_xmqYgJEaEeWRQNiXes3u-A" name="id" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_NlRYcJEbEeWRQNiXes3u-A" name="login" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_S94b4JEbEeWRQNiXes3u-A" name="senha" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_W9qEIJEbEeWRQNiXes3u-A" name="nome" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_aHrwIJEbEeWRQNiXes3u-A" name="emall" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_VJQZMJEZEeWRQNiXes3u-A" name="Usuarios"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_YkJLsJEZEeWRQNiXes3u-A" name="setId(int Id)"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_fp9-4JEZEeWRQNiXes3u-A" name="getId(): String"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_rroZ8JEZEeWRQNiXes3u-A" name="setLogin(String login)"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_w98oIJEZEeWRQNiXes3u-A" name="getLogin(): String" visibility="public"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_MGVKsJEaEeWRQNiXes3u-A" name="setSenha(String senha)"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_R74o0JEaEeWRQNiXes3u-A" name="getSenha(): String"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_eChqgJEaEeWRQNiXes3u-A" name="setNome(String nome)"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_gLsWcJEaEeWRQNiXes3u-A" name="getNome( ): String"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_qSBtQJEaEeWRQNiXes3u-A" name="setEmail(String email)"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_tLzWwJEaEeWRQNiXes3u-A" name="getEmail(): String"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_s33ZAJEYEeWRQNiXes3u-A" name="Amigos"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_vjxloJEYEeWRQNiXes3u-A" name="Comunidade"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_4hP28JEYEeWRQNiXes3u-A" name="UsuariosController">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_D-1NMJEcEeWRQNiXes3u-A" name="autoid">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_IZwgYJEcEeWRQNiXes3u-A" name="dao" type="_9fnOYJEYEeWRQNiXes3u-A"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_UOsHAJEcEeWRQNiXes3u-A" name="createUsuarios"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_XvAzIJEcEeWRQNiXes3u-A" name="listaUsuario"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_bk1OIJEcEeWRQNiXes3u-A" name="prepareDelete"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_dybHEJEcEeWRQNiXes3u-A" name="prepareUpdate"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_h4pVkJEcEeWRQNiXes3u-A" name="saveOrUpdaye( Usuarios)"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_3GzVYJEcEeWRQNiXes3u-A" name="saveOrUpdayePerfil(Usuarios)"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_7uX9cJEcEeWRQNiXes3u-A" name="testeLogin(): boolean" concurrency="concurrent"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_-22xUJEcEeWRQNiXes3u-A" name="validaLogin(Usuarios)"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_BloEsJEdEeWRQNiXes3u-A" name="validaUsuarios(Usuarios)"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_9fnOYJEYEeWRQNiXes3u-A" name="UsuariosDao">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_Q2ZgEJEdEeWRQNiXes3u-A" name="usuarios" visibility="private" isUnique="false">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EEList"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_FKYvcJEeEeWRQNiXes3u-A" name="listaUsuarios"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_KDgagJEeEeWRQNiXes3u-A" name="deletaUsuarios(Usuarios)"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_c0J2EJEeEeWRQNiXes3u-A" name="getUsuarios(int id): Usuarios"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_juMQAJEeEeWRQNiXes3u-A" name="getUsuariosLogin(String login): Usuarios"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_uWsfwJEeEeWRQNiXes3u-A" name="saveOrUpdateUsuarios(Usuarios u)"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_3RURYJEeEeWRQNiXes3u-A" name="saveOrUpdayePerfilUsuarios(Usuarios u)"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="__ArJwJEeEeWRQNiXes3u-A" name="getLoginSenha(String login, String senha): Usuarios"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_-NF20JHFEeWXItNXe1yYkQ" name="InterDAO" visibility="package"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_OVEnAJHGEeWXItNXe1yYkQ" name="InterController"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_T_kEoJHGEeWXItNXe1yYkQ" name="InterModel"/>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_9jdhsJEaEeWRQNiXes3u-A">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_9jhMEJEaEeWRQNiXes3u-A" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
+</uml:Model>
