@@ -1,3 +1,8 @@
+# UFAL - BSI - EAD - 2014.1
+# Nome: Carlos Roberto dos Santos Silva
+# Data: 
+# Objetivo: criar app executado via terminal, parecido com Facebook
+
 package br.edu.ufal.si.main;
 
 import java.io.IOException;
